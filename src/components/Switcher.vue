@@ -19,7 +19,7 @@
         props: {
             nightActive: {
                 type: Boolean,
-                required: true
+                required: true,
             }
         },
     }
