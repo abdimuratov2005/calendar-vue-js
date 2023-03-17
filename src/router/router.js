@@ -1,66 +1,54 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import January from '../views/January.vue';
-import February from '../views/February.vue';
-import March from '../views/March.vue';
-import April from '../views/April.vue';
-import May from '../views/May.vue';
-import June from '../views/June.vue';
-import July from '../views/July.vue';
-import August from '../views/August.vue';
-import September from '../views/September.vue';
-import October from '../views/October.vue';
-import November from '../views/November.vue';
-import December from '../views/December.vue';
 
-const routes = [{
+const routes = [
+    {
         path: '/01',
-        component: January,
+        component: () => import('../views/January.vue'),
         alias: '/'
     },
-
     {
         path: '/02',
-        component: February
+        component: () => import ('../views/February.vue'),
     },
     {
         path: '/03',
-        component: March
+        component: () => import ('../views/March.vue'),
     },
     {
         path: '/04',
-        component: April
+        component: () => import ('../views/April.vue'),
     },
     {
         path: '/05',
-        component: May
+        component: () => import ('../views/May.vue'),
     },
     {
         path: '/06',
-        component: June
+        component: () => import ('../views/June.vue'),
     },
     {
         path: '/07',
-        component: July
+        component: () => import ('../views/July.vue'),
     },
     {
         path: '/08',
-        component: August
+        component: () => import ('../views/August.vue'),
     },
     {
         path: '/09',
-        component: September
+        component: () => import ('../views/September.vue'),
     },
     {
         path: '/10',
-        component: October
+        component: () => import ('../views/October.vue'),
     },
     {
         path: '/11',
-        component: November
+        component: () => import ('../views/November.vue'),
     },
     {
         path: '/12',
-        component: December
+        component: () => import ('../views/December.vue'),
     },
 ]
 
